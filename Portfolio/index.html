@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./images/Screenshot Capture - 2025-07-12 - 13-04-11.png" type="image/x-icon">
+    <title>Taoufik Boumalqua | Junior Software Engineer</title>
+</head>
+
+<body class="w-full min-h-screen overflow-x-hidden bg-black">
+    <div class="w-full  min-h-screen">
+        <header class="w-full h-23 bg-[#0d1117] flex items-center justify-between px-4 md:px-16 fixed z-50">
+            <a href="./index.html" class="text-white text-[35px] font-bold">T<span class="text-[#ae2922]">B</span></a>
+            <button class="md:hidden text-white text-2xl" id="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul id="navbar" class="hidden md:flex space-x-6 font-poppins font-medium text-white text-[16px]">
+                <li><a id="home" class="hover:text-[#ff4848] hover:border-b-[#ff4848] hover:border-b-solid hover:border-b-2 hover:pb-[6px] transition duration-300" href="#">Home</a></li>
+                <li><a id="about" class="hover:text-[#ff4848] hover:border-b-[#ff4848] hover:border-b-solid hover:border-b-2 hover:pb-[6px] transition duration-300" href="#">About</a></li>
+                <li><a id="skills" class="hover:text-[#ff4848] hover:border-b-[#ff4848] hover:border-b-solid hover:border-b-2 hover:pb-[6px] transition duration-300" href="#">Skills</a></li>
+                <li><a id="projects" class="hover:text-[#ff4848] hover:border-b-[#ff4848] hover:border-b-solid hover:border-b-2 hover:pb-[6px] transition duration-300" href="#">Projects</a></li>
+                <li><a id="contact" class="hover:text-[#ff4848] hover:border-b-[#ff4848] hover:border-b-solid hover:border-b-2 hover:pb-[6px] transition duration-300" href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <ul id="mobile-menu"
+            class="md:hidden fixed top-20 left-0 w-full bg-[#0d1117] text-white hidden flex-col space-y-4 p-6 font-poppins z-40">
+            <li><a href="#" id="home-mobile">Home</a></li>
+            <li><a href="#" id="about-mobile">About</a></li>
+            <li><a href="#" id="skills-mobile">Skills</a></li>
+            <li><a href="#" id="projects-mobile">Projects</a></li>
+            <li><a href="#" id="contact-mobile">Contact</a></li>
+        </ul>
+
+        <section
+            class="w-full h-[700px] flex flex-col items-center justify-center text-center text-white px-4 pt-32 pb-20 bg-gradient-overlay bg-black">
+            <h1 class="text-4xl md:text-6xl font-playfaire font-bold mb-4">Taoufik Boumalqua</h1>
+            <p class="text-[20px] md:text-2xl font-light font-poppins mb-6">Junior Software Engineer | Passionate about
+                Clean Code & Problem Solving</p>
+            <div class="flex relative flex-col mb-5 sm:flex-row gap-4">
+                <a  id="getintouch"
+                    class="px-6 py-3  text-[#ae2922] border-2 border-[#ae2922] rounded-full cursor-pointer font-poppins font-medium   shadow-[#ae2922] shadow-xl/30 hover:bg-[#bf4f49] hover:border-[#bf4f49]  hover:text-black hover: duration-500">Get
+                    In Touch</a>
+                <a  id="viewmywork"
+                    class="px-6 py-3 text-[#ae2922] border-2 border-[#ae2922] rounded-full cursor-pointer font-poppins font-medium   shadow-[#ae2922] shadow-xl/30 hover:bg-[#bf4f49] hover:border-[#bf4f49]   hover:text-black  duration-500">View
+                    My Work</a>
+            </div>
+            <div class=" relative  "><button type="button" id='download'
+                    class="font-poppins items-center border-2 flex cursor-pointer h-12  rounded-3xl font-[500] px-8 text-s border-[transparent] text-white bg-[#ae2922] shadow-[#ae2922] shadow-xl/30  hover:bg-[transparent] hover:border-[#ae2922]  hover:text-[#ae2922]  ">Download
+                    CV ▾</button>
+                <div id='cvoptions'
+                    class="  hidden absolute -translate-x-0.5 mt-0.5  h-[150px] w-[190px] bg-[#161b22] left-0 z-50   border-solid border-[#30363d] border-1 rounded-[6px] min-w-[200px]">
+                    <a href="https://raw.githubusercontent.com/tf9bmq/Portfolio/main/files/Taoufik_Boumalqua_CV_V2.pdf" class="px-3 py-3 block text-[176x] pb-4 font-poppins text-center rounded-[6px] hover:bg-stone-900" download>Download
+                        CV (French)</a>
+                    <a href="#"
+                        class="pt-3 pb-5 px-4 block text-[16px] text-center  rounded-[6px] font-poppins border-t-1  border-solid  hover:bg-stone-900 border-[#30363d]">Download
+                        CV
+                        (English)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-about" class="w-full h-[1220px] bg-[#0d1117] max-w-screen-xl mx-auto px-4 py-16 text-white">
+            <h2 class="text-3xl font-playfaire lignecolore md:text-4xl font-bold text-center   mt-7">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center  gap-2">
+                <div class="md:w-1/2 text-[18px] font-poppins leading-relaxed ml-10">
+                    <p class="mb-4">Hello! I'm Taoufik Boumalqua, a dedicated software engineering student at <a
+                            class="text-[#ae2922] font-semibold" href="https://www.esta.ac.ma/" target="_blank">Higher
+                            School Of Technology Agadir (ETSA)</a>. I'm passionate about solving complex problems
+                        through elegant solutions.</p>
+                    <p class="mb-4">My tech journey started with the question: "How do these systems actually work?"
+                        That curiosity has driven me to master a wide range of tools and languages.</p>
+                    <p class="mb-4">Outside of coding, I enjoy exploring new technologies and contributing to the tech
+                        community.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="./images/ChatGPT Image 10 juil. 2025, 12_58_24.png" alt="Taoufik Photo"
+                        class="rounded-xl w-full h-auto max-w-sm mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="section-skills" class="w-full max-w-screen-xl mx-auto px-4 bg-[#1a1a1a] py-16 text-white">
+            <h2 class="font-playfaire text-3xl md:text-4xl font-bold text-center bg-[#1a1a1a] lignecolore  mb-8 mt-8">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class=" h-[514px] p-8 border border-[#30363d] rounded-2xl bg-[#161b22] hover:-translate-y-3 ease-in duration-140">
+                    <h3 class="font-playfaire text-[25px] mb-5"><i
+                            class="fa fa-code text-[#ae2922] mr-3"></i>Programming
+                        Languages</h3>
+                    <ul class="font-poppins space-y-7 custom-ul-style text-left">
+                        <li>JavaScript - Building interactive web applications</li>
+                        <li>PHP - Web development</li>
+                        <li>C - Intermediate-level programming, memory management and data structures</li>
+                        <li>Python - Data analysis and application development</li>
+                    </ul>
+                </div>
+                <div
+                    class="p-8 border border-[#30363d] rounded-2xl bg-[#161b22] hover:-translate-y-3 ease-in duration-140">
+                    <h3 class="font-playfaire text-[25px] mb-5"><i
+                            class="fas fa-laptop-code text-[#ae2922] mr-3"></i>Web
+                        Development</h3>
+                    <ul class="font-poppins space-y-7 custom-ul-style text-left">
+                        <li>HTML5 - Semantic markup and structure</li>
+                        <li>Tailwind/CSS3 - Responsive design and animations</li>
+                        <li>JavaScript - DOM manipulation and ES6+ features</li>
+                    </ul>
+                </div>
+                <div
+                    class="p-8 border border-[#30363d] rounded-2xl bg-[#161b22] hover:-translate-y-3 ease-in duration-140">
+                    <h3 class="font-playfaire text-[25px] mb-5"><i
+                            class="fa fa-database text-[#ae2922] mr-3"></i>Database &
+                        Tools</h3>
+                    <ul class="font-poppins space-y-7 custom-ul-style text-left">
+                        <li>MySQL - Relational database management</li>
+                        <li>SQL - Database design and query optimization</li>
+                        <li>PL/SQL - Stored procedures and functions</li>
+                        <li>GitHub - Code hosting, collaboration, and project management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-projects" class="w-full max-w-screen-xl  bg-[#0d1117] mx-auto px-4 py-16 text-white">
+            <h2 class="font-playfaire text-3xl md:text-4xl font-bold text-center lignecolore  mb-8 mt-7">Featured Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 hover:-translate-y-3 ease-in duration-140">
+                <div class=" h-[514px] bg-[#161b22] border border-[#30363d] rounded-2xl overflow-hidden">
+                    <img src="./images/Screenshot Capture - 2025-07-11 - 00-01-12.png" alt="Project Screenshot"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-[25px] font-playfaire mb-3">Personal Portfolio Website</h3>
+                        <p class="text-sm font-poppins text-[15px] mb-4">Responsive personal website built with HTML, Tailwind CSS,
+                            and JavaScript to showcase projects and skills.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-[#1a1a1a] text-[13px] px-3 py-1 rounded-full border border-gray-700">HTML</span>
+                            <span
+                                class="bg-[#1a1a1a] text-[13px] px-3 py-1 rounded-full border border-gray-700">Tailwind
+                                CSS</span>
+                            <span
+                                class="bg-[#1a1a1a] text-[13px] px-3 py-1 rounded-full border border-gray-700">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/tf9bmq/Portfolio" target="_blank"
+                            class="inline-flex items-center bg-[#ae2922] hover:bg-[#bf4f49] text-black px-4 py-2 rounded-full font-poppins text-sm transition">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-contact" class="w-full max-w-screen-xl  bg-[#1a1a1a] mx-auto px-4 py-16 border-b-1 border-[#30363d] text-white">
+            <h2 class="font-playfaire text-3xl md:text-4xl font-bold text-center lignecolore  mb-8 mt-9">Get In Touch</h2>
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="w-full lg:w-1/2 bg-[#161b22] p-6 rounded-xl border border-[#30363d]">
+                    <form action="https://formsubmit.co/taoufikboumalqua001@gmail.com" method="post" class="space-y-6">
+                        <div>
+                            <label for="name" class="block  mb-1 font-poppins">Your Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="border-[#30363d] rounded-[5px] border-1 text-start left px-4 py-3 w-full  focus:shadow-[0_0_0_3px_#ae2922] focus:outline-none focus:shadow-[#ae29226c] focus:border-[#ae2922] focus:border-solid focus:border-[1.5px]">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1 font-poppins">Your Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="border-[#30363d] rounded-[5px] border-1 text-start left px-4 py-3 w-full  focus:shadow-[0_0_0_3px_#ae2922] focus:outline-none focus:shadow-[#ae29226c] focus:border-[#ae2922] focus:border-solid focus:border-[1.5px]">
+                        </div>
+                        <div>
+                            <label for="message" class="block  mb-1 font-poppins">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="border-[#30363d] rounded-[5px] border-1 text-start left px-4 py-3 w-full h-[160px]  focus:shadow-[0_0_0_3px_#ae2922] focus:outline-none focus:shadow-[#ae29226c] focus:border-[#ae2922] focus:border-solid focus:border-[1.5px]"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="py-3 block px-8 rounded-[50px] font-[600] text-[14px] cursor-pointer border-2 border-[#ae2922] text-white bg-[#ae2922] shadow-[#ae2922] shadow-xl/30 hover:bg-[#0d1117] hover:border-[#ae2922]  hover:text-[#bf4f49] hover:-translate-y-0.5 duration-200">Send
+                            Message</button>
+                    </form>
+                </div>
+                <div class="w-full lg:w-1/2 space-y-6 font-poppins">
+                    <div class="flex items-start gap-4">
+                        <i class="fa fa-envelope text-[#ae2922] text-[24px]  mr-2 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-playfaire text-[23px]">Email</h4>
+                            <a href="mailto:taoufikboumalqua001@gmail.com" class="font-poppins text-[17px] text-[#e1e8f0c7]">taoufikboumalqua001@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-[#ae2922] text-[24px]  mr-2 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-playfaire text-[23px]">Location</h4>
+                            <p class="font-poppins text-[17px] text-[#e1e8f0c7]">Agadir, Morocco</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fa fa-university text-[#ae2922] text-[24px]  mr-2 mt-0.5"></i>
+                        <div>
+                            <h4 class="font-playfaire text-[23px]">Education</h4>
+                            <p class="font-poppins text-[17px] text-[#e1e8f0c7]">ESTA - Software Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-[#0d1117] h-[285px] text-white py-8">
+            <div class="flex flex-col items-center space-y-4">
+                <a href="./index.html" class="text-white text-[35px] font-bold">T<span class="text-[#ae2922]">B</span></a>
+                <ul class="flex-wrap justify-center gap-4 text-[16px]  text-white  flex  right-0 space-x-7 font-poppins font-[500] mb-5 mt-3">
+                    <li><a id="home-footer" class="hover:text-[#ff4848]" href="#">Home</a></li>
+                    <li><a id="about-footer" class="hover:text-[#ff4848]" href="#">About</a></li>
+                    <li><a id="skills-footer" class="hover:text-[#ff4848]" href="#">Skills</a></li>
+                    <li><a id="projects-footer" class="hover:text-[#ff4848]" href="#">Projects</a></li>
+                    <li><a id="contact-footer" class="hover:text-[#ff4848]" href="#">Contact</a></li>
+                </ul>
+                <div class="flex space-x-4 mt-2">
+                    <a target="_blank" href="https://www.linkedin.com/in/taoufik-boumalqua-918b93359/"><i
+                            class="fab fa-linkedin hover:text-[#ff4848] text-white text-2xl"></i></a>
+                    <a target="_blank" href="https://github.com/tf9bmq"><i
+                            class="fab fa-github hover:text-[#ff4848] text-white text-2xl"></i></a>
+                </div>
+                <p class="text-[14px] mt-4 text-[#ffffffab] font-poppins">© 2025 Taoufik Boumalqua. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
